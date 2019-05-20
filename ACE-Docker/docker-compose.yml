@@ -4,7 +4,7 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.18.0.0/16
+        - subnet: 172.19.0.0/16
 services:
   ace-rabbitmq:
     image: specterops/ace-rabbitmq
@@ -13,7 +13,7 @@ services:
     hostname: ace-rabbitmq
     networks:
       ace:
-        ipv4_address: 172.18.0.2
+        ipv4_address: 172.19.0.2
         aliases:
           - rabbitmq.ace.local
     ports: 
@@ -28,7 +28,7 @@ services:
       ace:
         aliases:
           - sql.ace.local
-        ipv4_address: 172.18.0.3
+        ipv4_address: 172.19.0.3
     ports: 
       - 1433:1433
   ace-nginx:
@@ -40,7 +40,7 @@ services:
       ace:
         aliases:
           - nginx.ace.local
-        ipv4_address: 172.18.0.4
+        ipv4_address: 172.19.0.4
     ports:
       - "80:80"
       - "443:443"
