@@ -7,10 +7,10 @@ ACE is meant to simplify the process of remotely collecting data across an envir
 
 ## Why use ACE?
 ACE grew out of the need to perform Compromise Assessments in places with common restrictions:
-* A dedicated software agent canít be installed on the target hosts.
+* A dedicated software agent can‚Äôt be installed on the target hosts.
 * Copying and running executables (such as Sysinternals tools) is not feasible.
 * The customer cannot enable Windows Remoting (WinRM).
-* The customerís visibility into macOS/Linux hosts is limited or nonexistent.
+* The customer‚Äôs visibility into macOS/Linux hosts is limited or nonexistent.
 * New scripts/tools must be created for customer-specific data.
 * Network segmentation requires multiple credentials to access all machines in the environment.
 
@@ -31,7 +31,7 @@ The ACE repository includes a collection of PowerShell scripts to interact with 
 
 After deploying the ACE servers, use **New-AceUser** to create a new ACE user.
 
-Remove the default ìAdminî user with **Remove-AceUser**.
+Remove the default ‚ÄúAdmin‚Äù user with **Remove-AceUser**.
 
 Use **New-AceCredential** to enter a set of credentials.
 
@@ -47,3 +47,9 @@ Run **Start-AceSweep** to start a sweep to run the selected scripts across the d
 
 ## Contributing
 Contributions to ACE are always welcome.
+
+
+
+############################################################################################
+
+Test 1 for Commit Build Trigger.
